@@ -1,0 +1,49 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-text {
+  color: var(--muted);
+  font-size: 16px;
+  max-width: 540px;
+}
+
+.values {
+  display: grid;
+  gap: 12px;
+}
+
+.value {
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+
+  h4 {
+    margin: 0 0 6px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .tick {
+      color: var(--accent);
+      font-family: var(--font-mono), serif;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+}

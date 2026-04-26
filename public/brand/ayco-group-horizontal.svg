@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80" shape-rendering="geometricPrecision">
+  <defs>
+    <linearGradient id="ayco-h-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffa3"/>
+      <stop offset="100%" stop-color="#7c5cff"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark (60x60, rx=14) -->
+  <g transform="translate(8 10)">
+    <rect x="0" y="0" width="60" height="60" rx="14" ry="14" fill="url(#ayco-h-grad)"/>
+    <g transform="scale(0.234)" fill="#05060c">
+      <g transform="translate(31.8 41.6) scale(3.6)">
+        <polygon points="1.76,46.63 8.81,32.33 16.87,32.33 10.89,46.63"/>
+        <polygon points="23.00,5.52 32.09,5.52 51.67,46.63 42.58,46.63"/>
+        <circle cx="26.84" cy="36.71" r="4.17"/>
+      </g>
+    </g>
+  </g>
+  <!-- Wordmark -->
+  <text x="84" y="51"
+        font-family="'Space Grotesk', 'Inter', system-ui, sans-serif"
+        font-size="26" font-weight="700"
+        fill="#ffffff" letter-spacing="-0.5">Ayco Group</text>
+</svg>

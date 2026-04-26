@@ -1,0 +1,32 @@
+.contact {
+  border-top: 1px solid var(--border);
+  background: var(--bg-soft);
+  text-align: center;
+  padding: 80px 0;
+
+  h2 {
+    font-size: clamp(28px, 3.2vw, 44px);
+    margin: 0 0 14px;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    color: var(--muted);
+    margin: 0 auto 28px;
+    max-width: 520px;
+    text-wrap: pretty;
+  }
+
+  .kicker {
+    margin-bottom: 12px;
+    display: block;
+  }
+}
+
+.contact-links {
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

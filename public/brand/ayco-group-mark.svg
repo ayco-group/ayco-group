@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" shape-rendering="geometricPrecision">
+  <defs>
+    <linearGradient id="ayco-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffa3"/>
+      <stop offset="100%" stop-color="#7c5cff"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="256" height="256" rx="56" ry="56" fill="url(#ayco-grad)"/>
+  <g transform="translate(31.8 41.6) scale(3.6)" fill="#05060c">
+    <polygon points="1.76,46.63 8.81,32.33 16.87,32.33 10.89,46.63"/>
+    <polygon points="23.00,5.52 32.09,5.52 51.67,46.63 42.58,46.63"/>
+    <circle cx="26.84" cy="36.71" r="4.17"/>
+  </g>
+</svg>

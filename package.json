@@ -1,0 +1,45 @@
+{
+  "name": "ayco-group",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ayco group corporate landing page",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "build-only": "vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --fix",
+    "format": "prettier --write \"src/**/*.{ts,scss,json}\" \"*.{html,json,md}\" \"en/*.html\"",
+    "format:check": "prettier --check \"src/**/*.{ts,scss,json}\" \"*.{html,json,md}\" \"en/*.html\"",
+    "prepare": "husky",
+    "release": "semantic-release"
+  },
+  "lint-staged": {
+    "*.{js,ts,html,css,scss,json}": "prettier --write",
+    "*.{js,ts}": "eslint --fix"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.6",
+    "@semantic-release/release-notes-generator": "^14.1.0",
+    "@types/node": "^25.6.0",
+    "eslint": "^10.2.1",
+    "@eslint/js": "^10.0.1",
+    "typescript-eslint": "^8.59.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "npm-run-all2": "^8.0.4",
+    "prettier": "^3.8.2",
+    "sass-embedded": "^1.99.0",
+    "semantic-release": "^25.0.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.10",
+    "vite-plugin-checker": "^0.13.0"
+  }
+}
