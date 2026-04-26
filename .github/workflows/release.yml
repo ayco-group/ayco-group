@@ -39,6 +39,8 @@ jobs:
     needs: [setup]
     name: Resolve version
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     outputs:
       version: ${{ steps.next.outputs.version }}
     steps:
@@ -66,7 +68,7 @@ jobs:
       - name: Compute next semantic-release version
         id: next
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
           DRY_OUTPUT=$(npx semantic-release --dry-run --no-ci 2>&1 || true)
@@ -157,7 +159,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          persist-credentials: false
           fetch-depth: 0
 
       - name: Cache dependencies
@@ -178,5 +179,5 @@ jobs:
 
       - name: Run Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run release
